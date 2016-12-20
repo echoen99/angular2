@@ -15,6 +15,7 @@ var http_1 = require('@angular/http');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var welcome_component_1 = require('./home/welcome.component');
+var dashboard_component_1 = require('./dashboard/dashboard.component');
 var product_list_component_1 = require('./products/product-list.component');
 var product_filter_pipe_1 = require('./products/product-filter.pipe');
 var star_component_1 = require('./shared/star.component');
@@ -32,6 +33,7 @@ var AppModule = (function () {
                     { path: 'products', component: product_list_component_1.ProductListComponent },
                     { path: 'product/:id', component: product_detail_component_1.ProductDetailComponent },
                     { path: 'welcome', component: welcome_component_1.WelcomeComponent },
+                    { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
                     { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                     { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
                 ])
@@ -39,6 +41,7 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 welcome_component_1.WelcomeComponent,
+                dashboard_component_1.DashboardComponent,
                 product_list_component_1.ProductListComponent,
                 product_filter_pipe_1.ProductFilterPipe,
                 star_component_1.StarComponent,
